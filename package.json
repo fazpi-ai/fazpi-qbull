@@ -1,22 +1,50 @@
 {
-  "name": "fazpi-qbull",
+  "name": "@fazpi-ai/qbull",
   "version": "1.0.0",
-  "description": "Simple libreria encargada de procesar mensajes entre microservicios.",
-  "main": "index.js",
+  "description": "Librería simple para procesar mensajes entre microservicios usando Redis Streams.",
   "type": "module",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fazpi-ai/fazpi-qbull"
+  },
+  "keywords": [
+    "redis",
+    "queue",
+    "streams",
+    "bull",
+    "jobs",
+    "microservices",
+    "message queue"
+  ],
+  "author": "Rafael Jose Garcia Suarez <rafaeljosegarciasuarez@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.5.0",
     "ioredis": "^5.6.1",
-    "pino": "^9.6.0",
+    "pino": "^9.6.0"
+  },
+  "devDependencies": {
     "pino-pretty": "^13.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

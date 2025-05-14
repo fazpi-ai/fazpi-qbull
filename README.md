@@ -1,2 +1,2 @@
 # qbull
-Simple libreria encargada de procesar mensajes entre microservicios.
+Simple library responsible for processing messages between microservices.
